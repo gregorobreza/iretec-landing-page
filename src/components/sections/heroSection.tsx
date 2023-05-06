@@ -13,7 +13,7 @@ export function HeroSection() {
           }}
         />
       </div>
-      <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56 h-[75vh] lg:h-[100vh]">
+      <div className="mx-auto max-w-3xl py-28 sm:py-48 lg:py-56 h-[90vh] lg:h-[100vh]">
         <div className="text-center">
           <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-7xl">
             Innovative Solutions for Secure Identification
