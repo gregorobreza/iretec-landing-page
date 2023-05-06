@@ -1,3 +1,6 @@
+"use client";
+import { handleClickScroll } from "../header";
+
 export function HeroSection() {
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -30,8 +33,9 @@ export function HeroSection() {
               Get in Touch
             </a>
             <a
-              href="#"
-              className="text-lg font-semibold leading-6 text-gray-900"
+              onClick={() => handleClickScroll("product")}
+
+              className="text-lg font-semibold leading-6 text-gray-900 cursor-pointer"
             >
               Learn more <span aria-hidden="true">→</span>
             </a>
