@@ -25,19 +25,18 @@ export function HeroSection() {
         </div> */}
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            Data to enrich your online business
+            Innovative Solutions for Secure Identification
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            Building a Safer and Smarter Future with Iris Recognition Technology
+            - Discover Our Research and Development Efforts.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#"
-              className="rounded-md bg-iretec-darkblue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-iretec-lightblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="rounded-xl bg-iretec-darkblue px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-iretec-lightblue focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Contact Us
+              Get in Touch
             </a>
             <a
               href="#"

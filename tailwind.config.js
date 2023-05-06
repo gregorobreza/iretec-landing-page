@@ -18,6 +18,8 @@ module.exports = {
       emerald: colors.emerald,
       indigo: colors.indigo,
       yellow: colors.yellow,
+      blue: colors.blue,
+      sky: colors.sky,
       "iretec-darkblue": "#12065B",
       "iretec-lightblue": "#00AEEE",
       "iretec-red": "#CD2839",

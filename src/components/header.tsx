@@ -5,10 +5,9 @@ import { Dialog } from "@headlessui/react";
 import Image from "next/image";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
   { name: "Company", href: "#" },
+  { name: "Product", href: "#" },
+  { name: "Get in Touch", href: "#" },
 ];
 
 export function Header(): JSX.Element {
@@ -65,12 +64,12 @@ export function Header(): JSX.Element {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <Image
-              src="/iretec-logo.jpg"
-              alt="iretec-logo"
-              height={70}
-              width={217.68}
-              priority
-            />
+                src="/iretec-logo.jpg"
+                alt="iretec-logo"
+                height={70}
+                width={217.68}
+                priority
+              />
             </a>
             <button
               type="button"
