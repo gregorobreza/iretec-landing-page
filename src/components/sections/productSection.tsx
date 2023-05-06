@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function ProductSection() {
   return (
-    <div className="relative isolate px-6 pt-2 lg:px-8">
+    <div className="relative isolate px-6 pt-2 pb-[80px] lg:px-8">
       <div className="flex flex-col w-full items-center justify-center xl:flex-row lg:items-top lg:justify-start">
         <div className="lg:mx-[70px] xl:max-w-2xl ">
           <div className="mb-8 rounded-[20px] bg-white p-8 lg:p-10 shadow-lg hover:shadow-xl md:px-7 xl:px-10 border">
