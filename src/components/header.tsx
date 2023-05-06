@@ -5,13 +5,22 @@ import { Dialog } from "@headlessui/react";
 import Image from "next/image";
 
 export const navigation = [
-  { name: "Company", href: "#" },
-  { name: "Product", href: "#" },
+  { name: "Product", href: "product" },
+  { name: "Company", href: "company" },
   { name: "Get in Touch", href: "#" },
 ];
 
+export const handleClickScroll = (scrollTo: string) => {
+  const element = document.getElementById(scrollTo);
+  if (element) {
+    // 👇 Will scroll smoothly to the top of the next section
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 export function Header(): JSX.Element {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <header className="absolute inset-x-0 top-0 z-50">
       <nav
@@ -44,8 +53,8 @@ export function Header(): JSX.Element {
           {navigation.map((item) => (
             <a
               key={item.name}
-              href={item.href}
-              className="text-base font-semibold leading-6 text-gray-900"
+              onClick={() => handleClickScroll(item.href)}
+              className="text-base font-semibold leading-6 text-gray-900 cursor-pointer"
             >
               {item.name}
             </a>
@@ -86,8 +95,11 @@ export function Header(): JSX.Element {
                 {navigation.map((item) => (
                   <a
                     key={item.name}
-                    href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    onClick={() => {
+                      handleClickScroll(item.href);
+                      setMobileMenuOpen(false);
+                    }}
+                    className="cursor-pointer -mx-3 block rounded-lg px-3 py-2 text-lg font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
                   </a>

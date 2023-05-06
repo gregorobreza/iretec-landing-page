@@ -27,7 +27,7 @@ const services: FeatureCardProps[] = [
 export function ServiceSection() {
   return (
     <div className="relative isolate px-6 pt-20  lg:px-8 xl:pb-6">
-      <div className="lg:mx-14 flex flex-col justify-center">
+      <div className="lg:mx-14 flex flex-col justify-center items-center">
         <div className=" flex flex-wrap">
           <div className="w-full">
             <div className="mx-4 mb-12 text-center lg:mb-16">
@@ -36,6 +36,13 @@ export function ServiceSection() {
               </h2>
             </div>
           </div>
+        </div>
+        <div className="pb-[50px] sm:px-8 w-[100%] max-w-[750px] h-[300px] sm:h-[435px]">
+          <iframe
+            width={"100%"}
+            height={"100%"}
+            src="https://www.youtube.com/embed/AVfx8qqhejQ?wmode=transparent"
+          ></iframe>
         </div>
         <div className=" flex flex-col lg:flex-row flex-wrap justify-center items-center ">
           {services.map((service, index) => (

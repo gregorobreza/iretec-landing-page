@@ -15,7 +15,7 @@ export function CompanySection() {
         </div>
         <div className="pt-12 xl:pt-0 xl:mx-8 max-w-[700px] lg:px-5">
           <div className="text-left">
-            <h2 className="text-3xl text-center  font-bold tracking-tight text-gray-900 sm:text-5xl">
+            <h2 className="text-3xl text-left  font-bold tracking-tight text-gray-900 sm:text-5xl">
               About us
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
