@@ -1,3 +1,4 @@
+import { CompanySection } from '@/components/sections/companySection'
 import { HeroSection } from '@/components/sections/heroSection'
 import { ProductSection } from '@/components/sections/productSection'
 import { ServiceSection } from '@/components/sections/serviceSection'
@@ -8,6 +9,7 @@ export default function Home() {
     <main >
     {/* <main className="flex min-h-screen flex-col items-center justify-between p-24"> */}
        <HeroSection/>
+       <CompanySection/>
        <ServiceSection/>
        <ProductSection/>
       {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">

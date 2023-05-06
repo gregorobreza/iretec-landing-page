@@ -8,15 +8,15 @@ export interface FeatureCardProps {
 
 export function FeatureCard({ title, text, icon }: FeatureCardProps) {
   return (
-    <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-      <div className="mb-8 rounded-[20px] bg-white p-10 shadow-xl hover:shadow-2xl md:px-7 xl:px-10">
+    <div className="w-full lg:px-4  lg:w-1/3 ">
+      <div className="mb-8 rounded-[20px] bg-white p-10 shadow-lg hover:shadow-xl md:px-7 xl:px-10 border">
         <div className="bg-primary mb-8 flex h-[60px] w-[60px] items-center justify-center rounded-2xl bg-iretec-lightblue">
           {icon}
         </div>
-        <h4 className="text-dark mb-3 text-xl font-semibold">
+        <h4 className="text-dark mb-3 text-2xl font-semibold">
           {title}
         </h4>
-        <p className="text-body-color">
+        <p className="text-body-color text-gray-600">
           {text}
         </p>
       </div>
