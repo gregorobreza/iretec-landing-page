@@ -40,6 +40,9 @@ export function CompanySection() {
               proprietary, state-of-the-art algorithms to ensure optimal
               performance.{" "}
             </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+            Damjan Zadnik, Founder and CEO <span>(<a className="font-bold hover:underline" href="mailto:damjan.zadnik@iretec.eu">damjan.zadnik@iretec.eu</a>)</span>
+            </p>
           </div>
         </div>
       </div>

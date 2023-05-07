@@ -17,6 +17,12 @@ export function Footer() {
               priority
             />
           </a>
+          <div className="flex flex-col">
+            <p className="text-sm  text-white">IRETEC d.o.o.</p>
+            <p className="text-sm  text-white">Vodiška cesta 71</p>
+            <p className="text-sm  text-white">1217 Vodice</p>
+            <p className="text-sm  text-white">Slovenia</p>
+          </div>
           <div className="hidden sm:flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
             {navigation.map((item) => (
               <a

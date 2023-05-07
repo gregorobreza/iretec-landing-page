@@ -16,7 +16,7 @@ export function FeatureCard({ title, text, icon }: FeatureCardProps) {
         <h4 className="text-dark mb-3 text-2xl font-semibold">
           {title}
         </h4>
-        <p className="text-body-color text-gray-600">
+        <p className="text-body-color text-lg leading-8 text-gray-600">
           {text}
         </p>
       </div>
