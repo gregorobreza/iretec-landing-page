@@ -7,7 +7,7 @@ import Image from "next/image";
 export const navigation = [
   { name: "Product", href: "product" },
   { name: "Company", href: "company" },
-  { name: "Get in Touch", href: "#" },
+  { name: "Get in Touch", href: "company" },
 ];
 
 export const handleClickScroll = (scrollTo: string) => {
