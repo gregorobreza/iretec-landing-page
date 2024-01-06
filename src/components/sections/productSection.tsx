@@ -1,8 +1,32 @@
 import Image from "next/image";
+import { FeatureCard, FeatureCardProps } from "../styledComponents/featureCard";
+import {
+  ArrowsPointingInIcon,
+  RocketLaunchIcon,
+  ScaleIcon,
+} from "@heroicons/react/24/outline";
+
+const services: FeatureCardProps[] = [
+  {
+    title: "Fast",
+    text: "operation of our products relies on FPGA accelerated hardware architecture.",
+    icon: <RocketLaunchIcon className="h-8 w-8 text-gray-900 " />,
+  },
+  {
+    title: "Accurate",
+    text: "operation of our products relies on proprietary, and state of the art algorithms.",
+    icon: <ScaleIcon className="h-8 w-8 text-gray-900 " />,
+  },
+  {
+    title: "Compact",
+    text: "design of our products relies on highly-optimized hardware architecture.",
+    icon: <ArrowsPointingInIcon className="h-8 w-8 text-gray-900 " />,
+  },
+];
 
 export function ProductSection() {
   return (
-    <div className="relative isolate px-6 pt-2 pb-[80px] lg:px-8">
+    <div className="relative isolate px-6 pt-20 pb-[80px] lg:px-8">
       <div className="flex flex-col w-full items-center justify-center xl:flex-row lg:items-top lg:justify-start">
         <div className="lg:mx-[70px] xl:max-w-2xl ">
           <div className="mb-8 rounded-[20px] bg-white p-8 lg:p-10 shadow-lg hover:shadow-xl md:px-7 xl:px-10 border">
@@ -41,6 +65,16 @@ export function ProductSection() {
             width={650}
           />
         </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-3 justify-items-stretch gap-y-6 gap-x-6 lg:gap-x-12 pt-12 items-stretch">
+        {services.map((service, index) => (
+          <FeatureCard
+            key={index}
+            title={service.title}
+            text={service.text}
+            icon={service.icon}
+          />
+        ))}
       </div>
     </div>
   );
