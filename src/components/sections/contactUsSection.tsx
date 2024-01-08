@@ -13,11 +13,12 @@ const AnyReactComponent = () => (
 export function ContactUsSection() {
   const defaultProps = {
     center: {
-      lat: 46.19070139562739,
-      lng: 14.498149826443857,
+      lat: 46.187065666798325,
+      lng: 14.525957408598439,
     },
-    zoom: 11,
+    zoom: 14,
   };
+
   return (
     <div className="width-screen bg-sky-200 height-20 p-8 xl:py-[100px]">
       <div className="grid gap-y-6 gap-x-6 sm:grid-cols-2">
@@ -57,13 +58,13 @@ export function ContactUsSection() {
             >
               <AnyReactComponent
                 // @ts-ignore
-                lat={46.19070139562739}
-                lng={14.498149826443857}
+                lat={46.187065666798325}
+                lng={14.525957408598439}
               />
             </GoogleMapReact>
           </div>
           <p className="text-sm text-center text-gray-600">
-            We&apos;re located at Vodiška cesta 71, 1217 Vodice, Slovenia.
+            We&apos;re located at Pod Lipami 29, 1218 Komenda, Slovenia.
           </p>
         </div>
       </div>
